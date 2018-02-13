@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgdstyle"
+    tools:context="com.example.admin.GrabHouse.MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="monospace"
+        android:text="Account Login"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="UnknownId" />
+
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="74dp"
+        android:text="Login_ID"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/etLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+
+        android:layout_alignBottom="@+id/tvLogin"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/tvLogin"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="Enter Your Email_ID"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/Widget.AppCompat.Button.Colored"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCreate"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/buttonstyle"
+        android:elevation="5dp"
+        android:onClick="loginF"
+        android:text="Login"
+        android:textColor="@color/colorAccent"
+        android:textColorLink="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/btnCreate"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvForget"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/buttonstyle"
+        android:elevation="5dp"
+        android:onClick="createF"
+        android:text="Create Your Account"
+        android:textColorLink="?attr/colorButtonNormal" />
+
+
+    <TextView
+        android:id="@+id/tvForget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="87dp"
+        android:text="Forget Password?"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLogin"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/tvPass"
+        android:ems="10"
+        android:hint="Enter your password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/tvPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etPass"
+        android:layout_alignParentStart="true"
+        android:text="Password"
+        android:textSize="30dp" />
+
+
+</RelativeLayout>
+
+
+
+
